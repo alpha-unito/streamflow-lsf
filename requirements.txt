@@ -1,1 +1,1 @@
-streamflow @ git+https://github.com/alpha-unito/streamflow@master
+streamflow==0.2.0.dev11
