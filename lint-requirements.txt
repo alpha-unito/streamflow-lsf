@@ -1,4 +1,4 @@
 black==24.4.2
 codespell==2.2.5
 flake8-bugbear==23.7.10
-pyupgrade==3.10.1
+pyupgrade==3.15.2
