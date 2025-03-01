@@ -52,3 +52,6 @@ version = {attr = "streamflow_lsf.version.VERSION"}
 bandit = {file = "bandit-requirements.txt"}
 lint = {file = "lint-requirements.txt"}
 test = {file = "test-requirements.txt"}
+
+[tool.isort]
+profile = "black"

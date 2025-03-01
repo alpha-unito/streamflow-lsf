@@ -14,9 +14,11 @@ flake8:
 	flake8 streamflow_lsf tests
 
 format:
+	isort streamflow_lsf tests
 	black streamflow_lsf tests
 
 format-check:
+	isort --check-only streamflow_lsf tests
 	black --diff --check streamflow_lsf tests
 
 pyupgrade:
