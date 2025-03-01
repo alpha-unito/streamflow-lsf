@@ -8,7 +8,7 @@ pip install streamflow-lsf
 
 If everything worked correctly, whenever a workflow execution start the following message should be printed in the log:
 ```bash
-Successfully registered plugin streamflow_lsf.plugin.LSFStreamFlowPlugin
+Successfully registered plugin streamflow.plugins.unito.lsf.plugin.LSFStreamFlowPlugin
 ```
 
 ## Usage

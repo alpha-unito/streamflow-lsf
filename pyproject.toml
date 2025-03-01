@@ -34,19 +34,19 @@ dynamic = ["dependencies", "version"]
 Repository = "https://github.com/alpha-unito/streamflow-lsf"
 
 [project.entry-points]
-"unito.streamflow.plugin" = {"unito.lsf" = "streamflow_lsf.plugin:LSFStreamFlowPlugin"}
+"unito.streamflow.plugin" = {"unito.lsf" = "streamflow.plugins.unito.lsf.plugin:LSFStreamFlowPlugin"}
 
 [tool.setuptools]
 packages = [
-    "streamflow_lsf"
+    "streamflow.plugins.unito.lsf"
 ]
 zip-safe = true
 [tool.setuptools.package-data]
-"streamflow_lsf" = ["schemas/*.json"]
+"streamflow.plugins.unito.lsf" = ["schemas/*.json"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements.txt"}
-version = {attr = "streamflow_lsf.version.VERSION"}
+version = {attr = "streamflow.plugins.unito.lsf.version.VERSION"}
 
 [tool.setuptools.dynamic.optional-dependencies]
 bandit = {file = "bandit-requirements.txt"}

@@ -11,15 +11,15 @@ coverage-report: testcov
 	coverage report
 
 flake8:
-	flake8 streamflow_lsf tests
+	flake8 streamflow tests
 
 format:
-	isort streamflow_lsf tests
-	black streamflow_lsf tests
+	isort streamflow tests
+	black streamflow tests
 
 format-check:
-	isort --check-only streamflow_lsf tests
-	black --diff --check streamflow_lsf tests
+	isort --check-only streamflow tests
+	black --diff --check streamflow tests
 
 pyupgrade:
 	pyupgrade --py3-only --py38-plus $(shell git ls-files | grep .py)
