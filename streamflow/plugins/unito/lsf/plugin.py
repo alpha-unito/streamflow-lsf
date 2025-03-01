@@ -1,6 +1,6 @@
 from streamflow.ext.plugin import StreamFlowPlugin
 
-from streamflow_lsf.connector import LSFConnector
+from streamflow.plugins.unito.lsf.connector import LSFConnector
 
 
 class LSFStreamFlowPlugin(StreamFlowPlugin):
