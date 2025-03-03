@@ -7,7 +7,8 @@ import logging
 import os
 import re
 import shlex
-from typing import Any, MutableMapping, MutableSequence, cast
+from collections.abc import MutableMapping, MutableSequence
+from typing import Any, cast
 
 from importlib_resources import files
 from streamflow.core import utils
